@@ -31,7 +31,7 @@ Animal detection using Nvidia Jetson Nano [YouTube](https://youtu.be/WS0lKG8rBic
 ```
 git clone https://github.com/ndesale/Animal_Detection.git
 ```
-3. The attach your webcam to jetson nano.
+3. Then attach your webcam to jetson nano via USB cable.
 4. Find the name of your web cam using following command
 ```
 v4l2-ctl --list-devices
