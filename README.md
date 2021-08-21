@@ -6,9 +6,14 @@ One of the videos is here:
 
 # Goal:
 The goal of this project is to detect an animal on the road using the dashcam and if an animal is present on the road, then alert the driver about the presence of an animal (if an animal is present) to avoid the potential crash and injury to an animal.
+
 The alert can be generated using any emergency alarm present inside the vehicle.
-The hardware that I used was Nvidia Jetson Nano 4GB device. As I am completely new to computer vision, I had a lot of fun completing the Jetson nano AI course and developing this project. I watched several videos about object detection by Dustin Franklin. Then I used a camera to connect to the Jetson nano and finally I used the pretrained ssd_v2 model to detect animals present on the road. I also used Linux’s built-in system call to display an alert message to the user.
+
+The hardware that I used was Nvidia Jetson Nano 4GB device. As I am completely new to computer vision, I had a lot of fun completing the Jetson nano AI course and developing this project. I watched several videos about object detection by Dustin Franklin. 
+Then I used a camera to connect to the Jetson nano and finally I used the pretrained ssd_v2 model to detect animals present on the road. I also used Linux’s built-in system call to display an alert message to the user.
+
 There is still way more that can be done here, for example, right now instead of alarm I am just displaying an alert message to the user, but we can also use an alarm to generate a beep sound (for alarming driver).
+
 I do not have a car, so I have tested the model using the images available on the internet.
 Below are some images which shows the detected animal and an alert message at the top-right corner of the screen.
 
