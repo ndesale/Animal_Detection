@@ -61,4 +61,4 @@ python animal_detector.py
 
 ![image](https://user-images.githubusercontent.com/42191708/130309779-1c2ef8da-6399-43eb-9c17-0964926ab561.png)
 
-10. Once an animal is detected the code waits for 2 seconds because if we dont wait for 2 seconds then it will keep on spamming the alert message for each detection. There may be multiple detections in a second (maybe 10 or may be 20). If you want to reduce the time to wait then go to line number 26 and change the number of seconds from 2 to your desired value.
+10. Once an animal is detected the code waits for 2 seconds before detecting the next image because if we dont wait for 2 seconds then it will keep on spamming the alert message for each detection. There may be multiple detections in a second (maybe 10 or may be 20). If you want to reduce the time to wait then go to line number 26 and change the number of seconds from 2 to your desired value.
