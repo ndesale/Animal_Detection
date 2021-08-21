@@ -26,31 +26,34 @@ Animal detection using Nvidia Jetson Nano [YouTube](https://youtu.be/WS0lKG8rBic
 
 # Step by step process to run the code
 
-1. First install the object detection API from this [link](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md) onto your Nvidia Jetson Nano. This [link](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md) describes how to install object detection API on your nvidia jetson nano.
+1. First install the object detection API from this [link](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md) onto your Nvidia Jetson Nano. This [link](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md) describes how to install object detection API on your nvidia jetson nano.<br/>
 2. Once you install the object detection API using the above steps. Clone my repository using following command:
 ```
 git clone https://github.com/ndesale/Animal_Detection.git
 ```
-3. Then attach your webcam to jetson nano via USB cable.
+<br/>
+3. Then attach your webcam to jetson nano via USB cable.<br/>
 4. Find the name of your web cam using following command
 ```
 v4l2-ctl --list-devices
 ```
 It should be something like : /dev/video1  (instead of number 1 there may be different number of your webcam)
+<br/>
 5. Then edit my code 'animal_detector.py' using 'vi' or any other editor and edit line number 8 to:
 ```
 camera = jetson.utils.gstCamera(1280, 720, "Specify The Name of YOUR webcam")
 ```
 Here specify the name of your web cam that you obtained in step 4.
-
+<br/>
 6. Once everything is done, run my code 'animal_detector.py' using command:
 ```
 python animal_detector.py
 ```
-7. Initially it will take around 4-5 minutes to load the camera drivers and show up the camera video on the screen.
-8. Once the video window pops up, the detection begins, then put your camera in front of any animal present on the road, then it will show the animal detection using bounding box.
+<br/>
+7. Initially it will take around 4-5 minutes to load the camera drivers and show up the camera video on the screen.<br/>
+8. Once the video window pops up, the detection begins, then put your camera in front of any animal present on the road, then it will show the animal detection using bounding box.<br/>
 9. If an animal is detected on the screen then you can see an alert message on the top-right corner of the screen. Sample error message is shown here:
 
 ![image](https://user-images.githubusercontent.com/42191708/130309779-1c2ef8da-6399-43eb-9c17-0964926ab561.png)
-
-10. Once an animal is detected the code waits for 2 seconds because if we dont wait for 2 seconds then it will keep on spamming the alert message for each detection. There may be multiple detections in a second (maybe 10 or may be 20). If you want to reduce the time to wait then go to line number 26 and change the number of seconds from 2 to your desired value.
+<br/>
+10. Once an animal is detected the code waits for 2 seconds because if we dont wait for 2 seconds then it will keep on spamming the alert message for each detection. There may be multiple detections in a second (maybe 10 or may be 20). If you want to reduce the time to wait then go to line number 26 and change the number of seconds from 2 to your desired value.<br/>
