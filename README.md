@@ -27,5 +27,5 @@ Animal detection using Nvidia Jetson Nano [YouTube](https://youtu.be/WS0lKG8rBic
 # Step by step process to run the code
 
 1. First install the object detection API from this [link](https://developer.nvidia.com/blog/realtime-object-detection-in-10-lines-of-python-on-jetson-nano/) onto your Nvidia Jetson Nano.
-2. Then run this code using "python sample.py"
+2. Then run this code using "python animal_detector.py"
 3. Once camera opens up then put it in front of animals (present on the road) and it will show the animals detected on the screen.
