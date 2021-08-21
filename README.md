@@ -42,6 +42,7 @@ It should be something like : /dev/video1  (instead of number 1 there may be dif
 camera = jetson.utils.gstCamera(1280, 720, "Specify The Name of YOUR webcam")
 ```
 Here specify the name of your web cam that you obtained in step 4.
+
 6. Once everything is done, run my code 'animal_detector.py' using command:
 ```
 python animal_detector.py
