@@ -22,7 +22,7 @@ Animal detection using Nvidia Jetson Nano [YouTube](https://youtu.be/WS0lKG8rBic
 
 # Hardware Required:
 1. Nvidia Jetson Nano 4GB
-2. Any webcam.
+2. Any USB webcam.
 
 # Step by step process to run the code
 
